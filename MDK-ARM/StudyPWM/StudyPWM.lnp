@@ -1,0 +1,27 @@
+--cpu=Cortex-M4.fp.sp
+"studypwm\startup_stm32f407xx.o"
+"studypwm\main.o"
+"studypwm\gpio.o"
+"studypwm\tim.o"
+"studypwm\stm32f4xx_it.o"
+"studypwm\stm32f4xx_hal_msp.o"
+"studypwm\stm32f4xx_hal_tim.o"
+"studypwm\stm32f4xx_hal_tim_ex.o"
+"studypwm\stm32f4xx_hal_rcc.o"
+"studypwm\stm32f4xx_hal_rcc_ex.o"
+"studypwm\stm32f4xx_hal_flash.o"
+"studypwm\stm32f4xx_hal_flash_ex.o"
+"studypwm\stm32f4xx_hal_flash_ramfunc.o"
+"studypwm\stm32f4xx_hal_gpio.o"
+"studypwm\stm32f4xx_hal_dma_ex.o"
+"studypwm\stm32f4xx_hal_dma.o"
+"studypwm\stm32f4xx_hal_pwr.o"
+"studypwm\stm32f4xx_hal_pwr_ex.o"
+"studypwm\stm32f4xx_hal_cortex.o"
+"studypwm\stm32f4xx_hal.o"
+"studypwm\stm32f4xx_hal_exti.o"
+"studypwm\system_stm32f4xx.o"
+--library_type=microlib --strict --scatter "StudyPWM\StudyPWM.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "StudyPWM.map" -o StudyPWM\StudyPWM.axf
